@@ -1,0 +1,101 @@
+:root{
+  --bg-orange: #FC8902;
+  --bg-gray: #A5A5A5;
+  --primay-bg: #333333;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.container{
+  position: absolute;
+  top: 50px;
+
+  background-color: black;
+  border-radius: 20px;
+
+  width: 300px;
+}
+.output-container{
+  height: fit-content;
+  padding: 10px;
+
+  overflow: hidden;
+}
+
+.previous-operand{
+  height: 50px;
+  opacity: 0.8;
+  font-size: 24px;
+
+  margin-bottom: 10px;
+}
+
+.current-operand{
+  height: 50px;
+  font-size: 40px;
+
+  caret-color: var(--bg-orange);
+}
+
+.previous-operand,
+.current-operand{
+  font-weight: 700;
+  text-align: end;
+}
+
+.button-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  padding: 10px;
+
+  gap: 10px;
+}
+.btn{
+  background-color: var(--primay-bg);
+  height: 60px;
+  width: 60px;
+
+  border-style: none;
+  border-radius: 50%;
+
+  font-size: 24px;
+  text-align: center;
+  line-height: 60px;
+
+  cursor: pointer;
+}
+
+.btn:hover{
+  filter: brightness(120%);
+}
+
+.btn:active{
+  filter: brightness(50%);
+}
+
+.bg-gray{
+  background-color: var(--bg-gray);
+}
+
+.bg-orange{
+  background-color: var(--bg-orange);
+}
+
+.zero{
+  width: auto;
+
+  border-radius: 30px;
+  grid-column: span 2;
+}
